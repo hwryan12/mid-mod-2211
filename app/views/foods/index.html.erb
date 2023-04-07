@@ -1,0 +1,9 @@
+<h2>Total Results: <%= @total_results %></h2>
+<% @foods.each do |food| %>
+  <ul class="food">
+    <li class="code">Code: <%= food[:fdcId] %></li>
+    <li class="description">Description: <%= food[:description] %></li>
+    <li class="brand">Brand: <%= food[:brandOwner] %></li>
+    <li class="ingredients">Ingredients: <%= food[:ingredients] %></li>
+  </ul><br>
+<% end %>
